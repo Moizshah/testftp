@@ -1,0 +1,849 @@
+<!DOCTYPE html>
+<!--[if IE 9 ]><html class="ie ie9 no-js" lang="en"><![endif]-->
+<!--[if gt IE 9 | !IE]><!-->
+<html class="no-js" lang="en">
+<!--<![endif]-->
+
+<!-- Mirrored from demo.bonefishcode.com/flat-tech/demo/single-img/ by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 22 Mar 2018 07:54:08 GMT -->
+<!-- Added by HTTrack -->
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+<!-- /Added by HTTrack -->
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>CitZen- Community Basics</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="author" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+    <link rel="icon" href="assets/img/citzen.png">
+    <link rel='stylesheet' href='assets/css/bootstrap.min.css'>
+    <link rel='stylesheet' href='assets/css/vendor.css'>
+    <link rel='stylesheet' href='assets/css/style.css'>
+    <link rel='stylesheet' href='assets/css/demo.css'>
+    <link rel='stylesheet' href='assets/css/custom.css'>
+    <!--[if lte IE 9]><!-->
+    <script>
+        (function(w, d, s, l, i) {
+            w[l] = w[l] || [];
+            w[l].push({
+                'gtm.start': new Date().getTime(),
+                event: 'gtm.js'
+            });
+            var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s),
+                dl = l != 'dataLayer' ? '&l=' + l : '';
+            j.async = true;
+            j.src =
+                'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+            f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-MXQFGKP');
+    </script>
+    <script src='assets/js/vendor/html5shiv.min.js'></script>
+    <!--<![endif]-->
+
+    <style>
+        .is-site-bg-img .site-bg-img {
+            background-image: url(assets/img/Discussion.png) !important;
+            opacity: 1;
+        }
+
+
+        @media (min-width: 992px) {
+            .navbar-brand img {
+                max-height: 60px;
+            }
+        }
+
+        @media (min-width: 768px) {
+            .navbar-right {
+                margin-right: -20px;
+            }
+        }
+
+        .navbar-nav>li a {
+            font-size: 12px !important;
+        }
+
+
+        .site-footer-social-list li {
+            display: block;
+        }
+
+        .site-footer-social-list li:not(:first-child) {
+            font-size: 12px !important;
+            font-weight: 500;
+        }
+
+        .site-footer-social-list li:first-child {
+            text-decoration: underline;
+        }
+
+        .site-footer-social-list {
+            text-align: left;
+        }
+
+        @media (min-width: 768px) {
+            .footerRow .col-sm-2 {
+                width: 14%;
+            }
+
+        }
+
+        .navbar-nav.navbar-right li {
+            margin-left: -2px;
+        }
+
+        .container-fluid .col-sm-6:nth-child(odd) {
+            padding-left: 55px !important;
+        }
+
+        .container-fluid .col-sm-6:nth-child(even) {
+            padding-right: 55px !important;
+        }
+
+        .container-fluid .col-xs-12 {
+            padding-left: 55px !important;
+            padding-right: 55px !important;
+        }
+
+        .files {
+            margin-bottom: 22px;
+        }
+
+        .files img {
+            width: 50px;
+            height: 50px;
+        }
+
+        .files a {
+            width: 272px;
+            display: inline-block;
+            text-align: left;
+        }
+
+
+        .socialmediabuttons a {
+            background-color: none !important;
+        }
+
+
+
+        .socialmediabuttons .fa {
+            padding: 7px;
+            font-size: 30px;
+            width: 45px;
+            text-align: center;
+            text-decoration: none;
+
+        }
+
+        .socialmediabuttons .fa-facebook {
+            color: #3B5998 !important;
+        }
+
+
+        .socialmediabuttons .fa-twitter {
+            color: #55ACEE !important;
+        }
+
+        .socialmediabuttons .fa-google {
+            color: #dd4b39 !important;
+        }
+
+        .socialmediabuttons .fa-linkedin {
+            color: #007bb5 !important;
+        }
+
+        .socialmediabuttons .fa-instagram {
+            color: #125688 !important;
+        }
+
+        .socialmediabuttons .fa-medium {
+            color: #04CF6B !important;
+        }
+
+
+        .socialmediabuttons .fa:hover {
+            opacity: 0.5;
+        }
+
+
+        .otherPagesLink {
+            background-color: rgba(255, 255, 255, 0.09);
+            line-height: 27px !important;
+        }
+
+        @media (min-width: 992px) {
+            #navbar-collapse .navbar-nav>li {
+                float: right
+            }
+
+            #navbarmobile {
+                display: none !important;
+            }
+
+            #navbar-largescreen {
+                display: block !important;
+            }
+
+            .otherPagesLink {
+
+                position: absolute;
+                top: 0px;
+                right: 0px;
+                left: 0px;
+                width: 100%;
+            }
+
+        }
+
+        @media (max-width: 991px) {
+            .otherPageLink {
+                float: none;
+                position: relative;
+                top: 0px;
+                left: 0px;
+                right: 0px;
+
+            }
+
+            #navbarmobile {
+                display: block !important;
+            }
+
+            #navbar-largescreen {
+                display: none !important;
+            }
+
+        }
+
+        .otherPagesLink a {
+            font-weight: 700;
+        }
+
+        .navbar-right:not(.otherPagesLink) {
+            margin-top: 38px;
+
+        }
+
+        .navbar-right {
+            line-height: 40px !important;
+        }
+
+        #home {
+            height: 550px;
+        }
+
+
+        .global-active a {
+            color: white !important;
+        }
+
+        .global-active a:after {
+            border-bottom: 2px #1080f2 solid !important;
+            transform: translateX(-50%) scaleX(1) !important;
+            position: absolute;
+            bottom: -13px !important;
+            left: 50%;
+            content: "";
+            width: 90%;
+            height: 4px;
+            -webkit-border-radius: 50px;
+            border-radius: 50px;
+            background-color: #1080f2;
+        }
+
+
+
+        /* CheckBoxb */
+
+        .checkbox label:after,
+        .radio label:after {
+            content: '';
+            display: table;
+            clear: both;
+        }
+
+        .checkbox .cr,
+        .radio .cr {
+            position: relative;
+            display: inline-block;
+            border: 1px solid #a9a9a9;
+            border-radius: .25em;
+            width: 1.3em;
+            height: 1.3em;
+            float: left;
+            margin-right: .5em;
+            margin-top: 4px;
+        }
+
+        .radio .cr {
+            border-radius: 50%;
+        }
+
+        .checkbox .cr .cr-icon,
+        .radio .cr .cr-icon {
+            position: absolute;
+            font-size: .8em;
+            line-height: 0;
+            top: 50%;
+            left: 20%;
+        }
+
+        .radio .cr .cr-icon {
+            margin-left: 0.04em;
+        }
+
+        .checkbox label input[type="checkbox"],
+        .radio label input[type="radio"] {
+            display: none;
+        }
+
+        .checkbox label input[type="checkbox"]+.cr>.cr-icon,
+        .radio label input[type="radio"]+.cr>.cr-icon {
+            transform: scale(3) rotateZ(-20deg);
+            opacity: 0;
+            transition: all .3s ease-in;
+        }
+
+        .checkbox label input[type="checkbox"]:checked+.cr>.cr-icon,
+        .radio label input[type="radio"]:checked+.cr>.cr-icon {
+            transform: scale(1) rotateZ(0deg);
+            opacity: 1;
+        }
+
+        .checkbox label input[type="checkbox"]:disabled+.cr,
+        .radio label input[type="radio"]:disabled+.cr {
+            opacity: .5;
+        }
+
+
+
+
+
+
+
+        footer {
+            background-color: #068ACE !important;
+        }
+
+        .m_bottom_25 {
+            margin-bottom: 25px !important;
+        }
+
+        .bold {
+            font-weight: bold;
+        }
+
+        /* Fake image */
+
+        .fakeimg {
+           width: 100%;
+        }
+        
+        .community .panel-body
+        {
+        	padding:0px;
+        	
+        }
+        .community .panel-body p 
+        {
+        	padding:10px;
+        }
+        .quicklinks {
+    background-color: #353535;
+    padding: 5px 13px;
+    border-radius: 6px;
+}
+
+.quicklinks li a, .quicklinks h5 {
+    color: white !important;
+}
+
+ .quicklinks li:hover
+        {
+        	background-color:green;
+        }
+        ol.breadcrumb
+        {
+        	background-color:transparent;
+        }
+
+        .panel-footer
+        {
+        	overflow:hidden;
+        }
+        .promo
+        {
+        	margin-top: 17px;
+    		margin-bottom: 25px;
+        }
+        .promo img
+        {
+        	width: 100%;
+        }
+        .site-bg-overlay
+        {
+        	background-color: transparent !important;
+        }
+        .forumtable tbody td
+        {
+        	    padding-top: 10px !important;
+    			padding-bottom: 6px !important;
+        }
+         .forumtable tbody td:nth-child(2) > a
+         {
+         	    font-weight: 600;
+   				 font-size: 16px;
+         }
+          .forumtable tbody td:nth-child(2) p
+         {
+         	margin: 0px;
+         }
+         .forumtable tbody tr td:nth-child(1)
+         {
+         	text-align: center !important; 
+         }
+           .forumtable tbody td:nth-child(3) , .forumtable tbody td:nth-child(4)
+           {
+           	 line-height: 54px;
+           }
+          .forumtable tbody td img
+          {
+          	width: 60px;
+    		height: 60px;
+    		border-radius: 27px;
+          }
+          .forumtable tbody a:hover
+          {
+          	text-decoration: underline !important;
+          }
+          .forumtable thead th
+          {
+          	font-weight: 500;
+          }
+          .authorstable tr td:nth-child(1) img
+          {
+          	width: 30px;
+          	height: 30px;
+          }
+          
+          main
+          {
+          	margin-top: 90px;
+          }
+    </style>
+</head>
+
+<body>
+
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MXQFGKP"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    <div class="site">
+        <div class="site-loader">
+            <div class="site-loader-spinner"></div>
+        </div>
+        <!-- .site-loader -->
+
+        <div id="demo" class="ccard">
+            <div class="ccard__block">
+                <ul class="ccard__ul _light" data-type="toggle">
+                    <li>
+                        <h4>MAP</h4>
+                        <a class="_on" data-on="is-map" data-off="is-map-disable"></a>
+                    </li>
+                </ul>
+            </div>
+            <!--
+				<a class="ccard__toggle" href="#">
+					<img src="assets/img/ccard_toggle.png" alt="">
+				</a>
+-->
+        </div>
+        <!-- /demo -->
+
+        <div class="site-canvas">
+           <header class="site-header">
+					<nav class="navbar navbar-theme" id="navbar-largescreen" style="background-color:#212121;">
+						<div class="container-fluid">
+							<div class="navbar-header">
+								<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false">
+									<span class="sr-only">Toggle navigation</span>
+									<span class="icon-bar"></span>
+									<span class="icon-bar"></span>
+									<span class="icon-bar"></span>
+								</button>
+								<div class="navbar-brand-wrap">
+									<a class="navbar-brand" href="#">
+										<img src="assets/img/logo2.png" alt="CitZen Logo" style="margin-top:40px; margin-left:2em; max-height:55px;">
+									</a>
+								</div>
+							</div> <!-- .navbar-header -->
+							
+							
+							<div class="collapse navbar-collapse" id="navbar-collapse" style="display: none; !important">
+							
+								<ul class="nav navbar-nav navbar-right otherPagesLink">	
+								
+									<li><a href="hiring.html">Join Our Team</a></li>
+									<li><a href="about.html">About Us</a></li>
+									<li><a href="#Airdrop">Airdrop</a></li>
+									<li><a href="blog/" >Blog</a></li>
+									<li><a href="ico.html">ICO</a></li>
+									<li><a href="javascript:;">Rewards Engine</a></li>
+									<li  class="global-active"><a href="co-ideas.html">Co-Creation</a></li>
+									<li><a href="platformViableSegments.html">Platform Viable Segments</a></li>
+									<li><a href="index.html">CitZen</a></li>
+								</ul>
+							
+							
+							
+								<ul class="nav navbar-nav navbar-right">
+									<li><button class="btn btn-primary" style="padding: 6px;">Submit an idea</button></li>
+									<li><a href="#">Login</a></li>
+									<li><a href="#">Support</a></li>
+									<li ><a href="">Community</a></li>	
+									<li><a href="#">Challenges</a></li>
+									<li class="active"><a href="#home">Co-Enable</a></li>
+									<li><a href="co-ideas.html">Co-idea</a></li>
+								</ul>
+								
+								
+								
+							</div> <!-- .navbar-collapse -->
+							
+							
+							
+							
+						</div>
+					</nav>
+					
+					
+					
+					<nav class="navbar navbar-theme" id="navbarmobile" >
+						<div class="container-fluid">
+							<div class="navbar-header">
+								<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#mobile-collapse" aria-expanded="false">
+									<span class="sr-only">Toggle navigation</span>
+									<span class="icon-bar"></span>
+									<span class="icon-bar"></span>
+									<span class="icon-bar"></span>
+								</button>
+								<div class="navbar-brand-wrap">
+									<a class="navbar-brand" href="#">
+										<img src="assets/img/logo2.png" alt="">
+									</a>
+								</div>
+							</div> <!-- .navbar-header -->
+							
+							
+							
+							
+							<div class="collapse navbar-collapse " id="mobile-collapse">
+							
+								<ul class="nav navbar-nav navbar-right otherPagesLink">	
+								
+									<li><a href="javascript:;">CitZen Community</a></li>
+									<li><a href="javascript:;">CitZen Reward</a></li>
+									<li><a href="ico.html">ICO</a></li>
+									<li><a href="blog.html">Blog</a></li>
+									<li><a href="#Airdrop">Airdrop</a></li>
+									<li><a href="about.html">About Us</a></li>
+									<li><a href="hiring.html">Join Us</a></li>
+								</ul>
+							
+							
+							
+								<ul class="nav navbar-nav navbar-right">
+									
+									<li class="active"><a href="#home">Home</a></li>
+									<li><a href="#brief_1">Future Is Here</a></li>
+									<li><a href="#roadmap">Roadmap</a></li>
+									<li><a href="#download">Downloads</a></li>
+									
+								</ul>
+								
+								
+								
+							</div> <!-- .navbar-collapse -->
+						</div>
+					</nav>
+				</header> <!-- .site-header -->
+            <!-- .site-header -->
+            <main class="site-main">
+                
+
+
+                <div id="brief_3" class="section block-default align-c-xs-max" style="padding-top: 45px;">
+                    <div class="container">
+                    <div class="row">
+                    <nav aria-label="breadcrumb">
+					  <ol class="breadcrumb">
+					    <li class="breadcrumb-item"><a href="communityForums.html">Forums</a></li>
+					    <li class="breadcrumb-item active" aria-current="page">CitZen Community Basics
+</li>
+					  </ol>
+					</nav>
+					</div>
+                    
+                    
+                    
+                    <div class="row">
+                                    <div class="col-sm-8">
+                                        <div class="col-inner">
+                                            <div class="section-heading">
+                                                <h2>CitZen Community Basics</h2>
+                                                
+                                                
+                                           
+                                            </div>
+                                            <!-- .section-heading -->
+                                            <div class="section-content">
+                                            <div class="Forum">
+                                            <table class="table table-responsive forumtable">
+                                             <thead>
+								             <tr>
+								              <th></th>
+								              <th>Title</th>
+								              <th>Replies</th>
+								              <th>Views</th>
+								             </tr>
+								             </thead>
+                                            <tbody>
+                                            <tr>
+                                            <td><img src="assets/img/avatar1.jpg"></td>
+                                            <td><a href="communityForumQuestion.html">Community Rankings</a>
+                                            <p>by <a href="#">jzinthehouse</a> on ‎04-20-2018 06:49</p>
+                                            <p>Latest post on ‎04-22-2018 07:32</p>
+                                            </td>
+                                            <td>4</td>
+                                            <td>60</td>
+                                            </tr>
+                                            
+                                            
+                                            <tr>
+                                            <td><img src="assets/img/avatar5.png"></td>
+                                            <td><a href="communityForumQuestion.html">Edit post in community</a>
+                                            <p>by <a href="#">JulieYoung</a> on ‎04-16-2018 16:59</p>
+                                            <p>Latest post on ‎04-16-2018 20:51 </p>
+                                            </td>
+                                            <td>1</td>
+                                            <td>130</td>
+                                            </tr>
+                                            
+                                            
+                                              <tr  class="success">
+                                            <td><img src="assets/img/avatar6.jpg"></td>
+                                            <td><a href="communityForumQuestion.html">Misspelled my Community Username</a>
+                                            <p>by <a href="#"> GoaliTilDeaths</a> on ‎09-25-2014 09:25s</p>
+                                            <p>Latest post on ‎04-12-2018 07:57 s</p>
+                                            </td>
+                                            <td>57</td>
+                                            <td>2632</td>
+                                            </tr>
+                                            
+                                            
+                                             <tr>
+                                            <td><img src="assets/img/avatar1.jpg"></td>
+                                            <td><a href="communityForumQuestion.html">Meet Allison</a>
+                                            <p>by <a href="#">jzinthehouse</a> on ‎04-20-2018 06:49</p>
+                                            <p>Latest post on ‎04-22-2018 07:32</p>
+                                            </td>
+                                            <td>4</td>
+                                            <td>60</td>
+                                            </tr>
+                                            
+                                            
+                                            <tr>
+                                            <td><img src="assets/img/avatar5.png"></td>
+                                            <td><a href="communityForumQuestion.html">How To: Edit Your Post</a>
+                                            <p>by <a href="#">JulieYoung</a> on ‎04-16-2018 16:59</p>
+                                            <p>Latest post on ‎04-16-2018 20:51 </p>
+                                            </td>
+                                            <td>1</td>
+                                            <td>130</td>
+                                            </tr>
+                                            
+                                            
+                                              <tr>
+                                            <td><img src="assets/img/avatar6.jpg"></td>
+                                            <td><a href="communityForumQuestion.html">Meet Solange</a>
+                                            <p>by <a href="#"> GoaliTilDeaths</a> on ‎09-25-2014 09:25s</p>
+                                            <p>Latest post on ‎04-12-2018 07:57 s</p>
+                                            </td>
+                                            <td>57</td>
+                                            <td>2632</td>
+                                            </tr>
+                                            
+                                            
+                                            </tbody>
+                                            
+                                            </table>
+                                            
+                                            </div>
+
+                                            
+                                            </div>
+                                            <!-- .section-content -->
+                                        </div>
+                                    </div>
+
+                                    <!--        Filter and Search Right                    -->
+                                    <div class="col-sm-4 m-t-60-xs-max p-l-60-md-min">
+                                    <div class="row">
+                                    <div class="col-sm-12 promo quicklinks">
+                                    <h5>Important Links</h5>
+                                    <ul style="list-style-type: none; padding: 0px;">
+									<li><a href="#">Community Guidelines</a></li>
+									<li><a href="#">Community Team</a></li>
+									<li><a href="#">Community Council</a></li>
+									<li><a href="#">Community Release Notes</a></li>
+								
+									</ul>
+                                    
+                                    
+                                    </div>
+                                    
+                                    </div>
+
+
+
+                                    </div>
+                                </div>
+
+                        <!-- Tabbing List/Grid -->
+                       
+
+
+                    </div>
+                </div>
+
+
+
+            </main>
+            <!-- .site-main -->
+            <footer class="site-footer block-invert" style="background-color:#099de6;">
+                <div class="container-fluid">
+                    <img class="site-footer-logo img-responsive" src="assets/img/logo1.png" data-sr="bottom" data-sr-id="2" style="; visibility: visible;  -webkit-transform: translateY(0); opacity: 1;transform: translateY(0); opacity: 1;-webkit-transition: -webkit-transform 0.8s ease-in-out 0s, opacity 0.8s ease-in-out 0s; transition: transform 0.8s ease-in-out 0s, opacity 0.8s ease-in-out 0s; ">
+                    <div class="row footerRow">
+                        <div class="col-sm-3">
+                            <ul class="site-footer-social-list">
+                                <li><a href="javascript:;">Platform Viable Segments</a></li>
+                                <li><a href="javascript:;">CitZen</a></li>
+                                <li><a href="javascript:;">Governments</a></li>
+                                <li><a href="javascript:;">Businesses</a></li>
+                                <li><a href="javascript:;">condominiums</a></li>
+                                <!--
+									<li style="padding-left: 10px;line-height: 13px;"><a href="javascript:;" style="font-size: 10px;">Vertical Viable Segment</a></li>
+									
+									<li style=" padding-left: 27px;"><a href="javascript:;" style="font-size: 10px;">WeServ</a></li>
+									-->
+
+
+
+                            </ul>
+                        </div>
+
+                        <div class="col-sm-3">
+                            <ul class="site-footer-social-list">
+                                <li><a href="javascript:;">Solution</a></li>
+                                <li><a href="javascript:;">Ecommerce Solution</a></li>
+                                <li><a href="javascript:;">Business Solution</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="col-sm-3">
+                            <ul class="site-footer-social-list">
+                                <li><a href="javascript:;">Use Case</a></li>
+                                <li><a href="javascript:;">ABC</a></li>
+                                <li><a href="javascript:;">DEF</a></li>
+                                <li><a href="javascript:;">XYZ</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="col-sm-3">
+                            <ul class="site-footer-social-list">
+                                <li><a href="javascript:;">Technology</a></li>
+                                <li><a href="javascript:;">ABC</a></li>
+                                <li><a href="javascript:;">DEF</a></li>
+                                <li><a href="javascript:;">XYZ</a></li>
+                            </ul>
+                        </div>
+                        <div class="clearfix"></div>
+                        <br>
+
+                        <div class="col-sm-3">
+                            <ul class="site-footer-social-list">
+                                <li><a href="javascript:;">Legal</a></li>
+                                <li><a href="javascript:;">Customer Agreement</a></li>
+                                <li><a href="javascript:;">Terms &amp; Conditions</a></li>
+                                <li><a href="javascript:;">Privacy Policy</a></li>
+                                <li><a href="javascript:;">Eula</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="col-sm-3">
+                            <ul class="site-footer-social-list">
+                                <li><a href="javascript:;">CitZen</a></li>
+                                <li><a href="javascript:;">About Us</a></li>
+                                <li><a href="javascript:;">Join Us</a></li>
+                                <li><a href="javascript:;">Team</a></li>
+                                <li><a href="javascript:;">Blog</a></li>
+                                <li><a href="javascript:;">Press</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="col-sm-3">
+                            <ul class="site-footer-social-list">
+                                <li><a href="javascript:;">Business Model</a></li>
+                                <li><a href="javascript:;">ABC</a></li>
+                                <li><a href="javascript:;">DEF</a></li>
+                                <li><a href="javascript:;">XYZ</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="col-sm-3">
+                            <ul class="site-footer-social-list">
+                                <li><a href="javascript:;">Slide Deck</a></li>
+                                <li><a href="javascript:;">ABC</a></li>
+                                <li><a href="javascript:;">DEF</a></li>
+                                <li><a href="javascript:;">XYZ</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <p class="site-footer-copyright">2018 © <a href="#" target="_blank">your copyright info</a> | all rights reserved.</p>
+                </div>
+            </footer>
+        </div>
+    </div>
+
+    <script src="assets/js/vendor/jquery-1.11.3.min.js"></script>
+    <script src='assets/js/vendor/bootstrap.min.js'></script>
+    <script src='assets/js/vendor/plugin.js'></script>
+    <script src='assets/js/variable.js'></script>
+    <script src='assets/js/map.js'></script>
+    <script src='assets/js/main.js'></script>
+    <script src='assets/js/demo.js'></script>
+
+    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+    <!--
+		<script>
+		(function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+		function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+		e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+		e.src='https://www.google-analytics.com/analytics.js';
+		r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+		ga('create','UA-XXXXX-X','auto');ga('send','pageview');
+		</script>
+		-->
+
+</body>
+
+<!-- Mirrored from demo.bonefishcode.com/flat-tech/demo/single-img/ by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 22 Mar 2018 07:54:51 GMT -->
+
+</html>
